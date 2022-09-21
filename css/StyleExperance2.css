@@ -74,7 +74,7 @@ header{
 	max-width: 100%;
 	height: 400px;
 	margin: 0px 0px 1px 0px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0 , 0, 0, 0.1)), url(img/X32.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0 , 0, 0, 0.1)), url("img/X32.jpg");
 	background-position: center;	
 	background-size: cover;
 	position: relative;
@@ -185,7 +185,7 @@ header{
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 30px;
-	background: url("../Preloader/spin.gif") center / 100px no-repeat;/*background-gif картинки во время загрузки(lazy loading)*/
+	
 }
 
 .warOne img{
