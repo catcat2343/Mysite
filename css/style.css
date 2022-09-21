@@ -8,10 +8,7 @@ header{
 	margin: 0px 0px 0px 0px;
 	background-color: #fff;
 	border-bottom: 1px solid #eeedf2;
-	/*Внизу идут свойства, создающие липкий header*/
-	position: sticky; 
-	top: 0;
-	z-index: 10;
+	
 
 
 }
