@@ -1,0 +1,1214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*---------------------------------------*/
+
+/*---------------------------------------*/
+/*HEADER*/
+.header{
+    /*min-height: 150px;*/
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 1px 0px;
+}
+/*первый блок HEADER*/
+.col-first{
+    height: 50px;
+    max-width: 100%;
+    border-bottom: 1px solid #d1c7d0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col-first h3 {
+    margin: 0px 0px 0px 100px;
+}
+.col-first h3 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: color .4s;/*effect welcome to pcc*/
+
+}
+.col-first h3 a:hover{/*effect welcome to pcc*/
+    color: #f50a1d;
+}
+.col-first .number{
+    margin: 0px 100px 0px 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: color .4s;
+}
+
+.number:hover{
+    color: #f50a1d;
+}
+/*второй блок HEADER*/
+.col-second{
+    height: 100px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col-second .logo{
+    margin: 0px 0px 0px 100px;
+}
+.col-second .logo a{
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 6px;
+    font-weight: 700;
+    /*font-family: 'Monsserat', sans-serif;*/
+}
+/*.col-second .nav{
+
+    margin: 0px 100px 0px 0px;
+}*/
+
+.nav ul li{
+    display: inline-block;
+    padding: 0px 10px 0px 0px;/*вверх право вниз лево*/
+
+}
+
+.nav ul{
+    padding: 0px 90px 0px 0px;
+}
+
+.col-second .nav .link-nav{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 15px 0px 0px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    position: relative;
+    transition: color .3s;/*эффект с цветом для навигации*/
+}
+.col-second .nav .link-nav:last-child{
+    margin: 0px 0px 0px 0px;
+}
+.col-second .nav .link-nav:hover{/*эффект с цветом для навигации*/
+    color: #f50a1d; 
+}
+.col-second .nav .link-nav::after{/*эффект с линией для навигации*/
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f50a1d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.col-second .nav .link-nav:hover::after{/*эффект с линией для навигации*/
+    width: 100%;
+}
+/*(MAIN)*/
+.FotoBlock{
+    max-width: 100%;
+    height: 400px;
+    margin: 0px 0px 40px 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0 , 0, 0, 0.1)), url(K22.jpg);
+    background-position: center;    
+    background-size: cover;
+    position: relative;
+    
+}
+
+.text-box{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;/*Y*/
+    left: 50%;/*X*/
+    transform: translate(-50%, -50%);/*Y X*/
+    text-align: center;
+}
+
+.text-box p{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.button{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    border: 1px solid black;
+    background: black;
+    transition: 0.5s;
+}
+/*------------------------*/
+/*БЛОК ТЕКСТА*/
+.text{
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}   
+
+.col-textOne{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 0px 100px 0px;
+}
+
+.col-textOne p{
+    padding: 0px 40px 0px 0px;
+    
+}
+
+.col-textOne p: last-child{
+    padding: 0px 0px 0px 0px;
+} 
+
+.col-textOne p a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #f05159;
+    padding: 5px 20px 5px 20px; /*красная рамка кнопки*/
+    background-color: #f05159;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    
+    
+}
+
+.col-textOne p a:hover{
+    border: 1px solid #000;
+    background-color: #000; /*эффект кнопки с темным фоном при касании*/
+    transition: .9s;
+}
+
+.col-textTwo{
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0px 0px 100px 0px;
+}
+
+.col-textTwo p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.col-textTree{
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0px 0px 100px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-textTree p{
+    font-size: 24px;
+    padding: 10px;
+    color: #f05159;
+    font-weight: bold;
+}
+
+.col-textTree .oneblock{
+    border-left: 1px solid #d1c7d0;
+    border-right: 1px solid #d1c7d0;
+}
+
+.col-textTree .twoblock{
+    border-left: 1px solid #d1c7d0;
+    border-right: 1px solid #d1c7d0;
+}
+
+.col-textTree .threeblok{
+    border-left: 1px solid #d1c7d0;
+    border-right: 1px solid #d1c7d0;
+}
+
+.col-textTree .fourblock{
+    border-left: 1px solid #d1c7d0;
+    border-right: 1px solid #d1c7d0;
+}
+/*-------------------*/
+/*БЛОК С ФОТОГРАФИЕЙ-*/
+.FOTOBLOCK{
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 0px 0px 100px 0px;
+}
+
+.col-fotoOne{
+    height: 600px;
+    padding: 0px 0px 20px 0px;
+    margin: auto;
+    text-align: center;
+}
+
+.col-fotoOne img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*.col-fotoTwo{
+    width: 100%; ЗАДАЮ ШИРИНУ И ВЫСОТУ БЛОКА В КОТОРОМ НАХОДИТСЯ ФОТОГРАФИЯ img
+    height: 300px;
+}
+                                КАК РАБОТАТЬ С ФОТОГРАФИЯМИ
+.col-fotoTwo img{
+    width: 100%;
+    height: 100%; ПРОПИСЫВАЮ ЧТО ФОТО img БУДЕТ ЗАНИМАТЬ 100%  ШИРИНЫ И ВЫСОТЫ РОДИТЕЛЬСКОГО БЛОКА 
+    object-fit: cover;   object-fit ЗДЕСЬ ДЛЯ КОРРЕКЦИИ ПИКСЕЛЕЙ ФОТО img
+}*/ 
+
+.col-fotoTwo p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+/*-----FOTOGROUP(СЕТКА ФОТОГРАФИЙ)---------*/
+.FOTOGROUP{
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 0px 0px 100px 0px;
+}
+
+.rowFotogroup{
+    display: flex;
+    justify-content: center;
+}
+
+.fotogroup-col{
+    /*flex-basis: 32%;*/
+    overflow: hidden;/*чтобы фото ны выходило за рамки блока*/
+    height: 300px;
+    width: 805px;
+    position: relative;
+}
+
+.fotogroup-col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*ЭФФЕКТ ДЛЯ СЕТКИ ФОТОГРАФИЙ*/
+.effect-fotogroup{/*затемнение фона*/
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+
+}
+
+.effect-fotogroup:hover{/*затемнение фона*/
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.effect-fotogroup p{
+    width: 100%;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+    bottom: 0;
+}
+
+.effect-fotogroup:hover p{
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+.zagolovok{
+    padding: 0px 0px 50px 0px;
+}
+
+.zagolovok p{
+    font-size: 32px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 10px;
+    display: inline-block;/*ДЛЯ ЧЕРТЫ*/
+    
+}
+
+.zagolovok p::after{/*ЧЕРТА ПО LIFE*/
+    content: "";
+    width: 91%; 
+    height: 3px;
+    background: #000;
+    display: block;
+
+}
+
+.zagolovokTwo{
+    padding: 0px 0px 50px 0px;
+}
+
+.zagolovokTwo p{
+    font-size: 32px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 10px;
+    display: inline-block;
+}
+
+.zagolovokTwo p::after{ /*ЧЕРТА ДЛЯ COMMERCE*/
+    content: "";
+    width: 97%;
+    height: 3px;
+    background: #000;
+    display: block;
+
+}
+/*--------БЛОК НОВОСТИ-----------*/
+
+.News{
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 0px 0px 100px 0px;
+    
+}
+
+.row-news{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-news{
+    width: 300px;
+    height: 200px;
+    border: 1px solid #dedbd5;
+    border-radius: 5px;
+    
+}
+
+.col-news:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ZT{
+    padding: 0px 0px 10px 0px;
+
+}
+
+.col-news .ZT h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #f05159;
+    padding: 10px 0px 0px 0px
+    
+
+
+}
+
+.col-news p{
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-size: 14px;
+    color: #8f8e8c;
+    padding: 0px 20px 0px 20px;
+
+    
+}
+
+.zagalovoknews{
+    padding: 0px 0px 50px 0px;
+    display: flex;
+    justify-content: left;
+}
+
+.zagalovoknews p{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/*FOOTER*/
+.footer{
+    max-width: 100%;
+    padding: 0px 0px 100px 0px;
+    background-color: #000;
+}
+
+.row-fot{
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-fotTwo .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-fotOne a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+
+
+}
+
+.col-fotOne p{
+    color: #fff;
+    padding: 0px 0px 10px 0px;
+}
+
+.col-fotOne h3{
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0px 0px 10px 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+}
+
+.col-fotOne .icons a{
+    padding: 0px 15px 0px 0px;
+}
+
+.col-fotTwo p{
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0px 0px 10px 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+
+
+}
+
+.col-fotTwo .info a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 0px 10px 0px;
+}
+
+.col-fotOne{
+    padding: 10px 0px 0px 0px;
+}
+
+.col-fotTwo{
+    padding: 10px 0px 0px 0px;
+}
+
+.faA{
+    display: none;
+}
+
+.faB{
+    display: none;
+}
+
+
+/*О НАС*/
+
+/*блок с фото*/
+.mainFotoblock{
+    max-width: 100%;
+    margin: 0px 0px 10px 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("C12.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.mainFoto{
+    width: 100%;
+    height: 300px;
+
+}
+
+.word{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.word p{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
+    
+}
+
+
+
+/*блок с текстом*/
+
+.textObl{
+    max-width: 90%
+    margin: auto;
+    align-items: center;
+    
+}
+
+.elementsrow{
+    display: flex;
+    position: relative;
+}
+
+
+.textAbout{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    
+}
+
+.textAbout img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.textAbout p{
+    padding-left: 10px;
+}
+
+/*КОНТАКТЫ*/
+
+.map{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    padding: 0px 0px 100px 0px;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+.info{
+    max-width: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.inforow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 0px 100px 0px;
+}
+
+.mainA{     /*КАРЬЕРА*/
+    max-width: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.tpone{
+    text-align: left;
+    padding: 0px 0px 50px 100px;
+
+}
+
+.tpone p{
+    font-size: 40px;
+    display: inline-block;
+}
+
+.tpone p::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #f50a1d;
+    display: block;
+    margin: auto;
+}
+
+.tptwo{
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+
+}
+
+.tptwo p{
+    font-size: 30px;
+    display: inline-block;
+
+}
+
+.tptwo p::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #000;
+    display: block;
+    margin: auto;
+
+}
+
+.mainArow{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainBrow{
+    display: flex;
+    justify-content: space-around;
+}
+
+.colbut{
+/*  padding: 0px 0px 0px 0px;*/
+    margin: 0px 0px 0px 0px;
+
+    flex-basis: 31%; /*Распределил текст по свободной областти контейнера div*/
+    background-color: #fc743a;
+    border-radius: 10px;/*скруглил концы*/
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+
+}
+
+.colbut p{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.colbut:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.buttMain{
+    text-align: center;
+    margin: 0px 0px 100px 0px;
+
+}
+
+.buttMain a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #fc743a;
+    padding: 10px 44px;
+    font-size: 13px;
+    background: #000;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttMain a:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+
+}
+
+.text-cooperation{  /*ПАРТНЕРСТВО*/
+    max-width: 100%;/*здесь ширина, позиция*/
+    text-align: left;
+
+}
+
+.text-cooperation p{
+    margin: 0px 0px 50px 100px;/*здесь отступы, цвет, стиль*/
+
+    font-size: 40px;
+    display: inline-block;
+
+}
+
+.text-cooperation p::after{/*линия*/
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #f50a1d;
+    display: block;
+    margin: auto;
+}
+
+.text-cooperationTwo{
+    max-width: 50%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    flex-basis: 31%;
+
+}
+
+.text-cooperationTwo p{
+    margin: 0px 0px 50px 0px;
+
+    border: 2px solid #000;
+    padding: 50px;
+    border-radius: 5px;
+
+    font-size: 20px;
+    line-height: 40px;
+    color: #434544;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+.highlight{
+    color: #f50a1d;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 999px){/*ПЛАНШЕТ*//*БРЭКПОИНТ*/
+    /*header(ШАПКА)*/
+    .header .col-first p{
+        display: none;
+    }
+
+    .header .col-first h3{
+        margin: 0px 0px 0px 10px;
+    }
+
+    .header .col-second .logo{
+        margin: 0px 0px 0px 10px;
+    }
+
+    .header .col-second .logo{
+        line-height: 40px;
+    }
+    /*Красное выпадающее меню*/
+    .header .col-second .nav a{
+        display: block;
+        margin: 10px 10px;
+        color: #fff;
+    }
+
+    .nav ul li{/*1*/
+        display: block;
+        margin: 50px 10px;
+
+    }
+
+    .nav{
+        position: fixed;
+        background: #000;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+
+    }
+
+    .nav ul li a{
+        color: #fff;
+    }
+
+    .faA{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .faB{
+        display: block;
+        color: #000;
+        margin: 30px;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .nav ul{
+        padding: 30px;
+    }
+
+    .col-second .nav .link-nav:hover::after{/*эффект с линией для навигации*/
+    width: 0%;
+
+    }
+}
+
+@media(max-width: 999px) {/*ПЛАНШЕТ*//*БРЭКПОИНТ*/
+
+    .col-textOne{
+        display: block;
+        padding: 0px 0px 30px 0px;
+
+    }
+
+    .col-textOne p{
+        margin: 0px 0px 30px 0px;
+    }
+
+    .col-textOne .one{
+        padding: 5px 75px 5px 75px;
+    }
+
+    .col-textOne .two{
+        padding: 5px 111px 5px 111px;
+    }
+
+    .col-news{
+        width: 300px;
+        height: 200px;
+        border: 1px solid #dedbd5;
+        border-radius: 5px;
+        margin-left: 20px;
+    
+    }
+
+    .col-textTwo{
+        max-width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 0px 0px 100px 0px;
+    }
+
+
+     .text-box p{
+        display: none;
+    }
+
+}
+
+@media(max-width: 477px){/*ТЕЛЕФОН*//*БРЭКПОИНТ*/
+
+    .col-first h3{
+        display: none;
+    }
+
+    .col-second .logo a{
+        font-size: 27px;
+        text-decoration: none;
+        color: #000;
+        letter-spacing: 1px;
+        font-weight: 700;
+
+
+        /*font-family: 'Monsserat', sans-serif;*/
+    }
+
+    .text-box p{
+        display: none;
+    }
+
+    .col-first{
+        /*height: 50px;
+        max-width: 100%;
+        border-bottom: 1px solid #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;*/
+        display: none;
+    }
+
+
+    .text{
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 10px;
+    }   
+
+    .col-textTree{
+        display: block;
+        padding-bottom: 10px;
+
+
+    }
+
+    .col-textOne{
+        display: none;
+    }
+
+    .col-textTwo{
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 0px 0px 20px 0px;
+    }
+
+
+    .col-fotoOne{/*ФОТО*/
+        height: 400px;
+        padding: 0px 0px 20px 0px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .fotogroup-col{/*СЕТКА ФОТО*/
+    /*flex-basis: 32%;*/
+        overflow: hidden;/*чтобы фото ны выходило за рамки блока*/
+        height: 150px;
+        width: 805px;
+        position: relative;
+    }
+
+    .News{
+        display: none;
+    }
+    
+    
+    .col-fotTwo{/*footer*/
+        display: none;
+    }
+
+    .effect-fotogroup p{
+        width: 100%;
+        font-size: 28px;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: 0.5s;
+        bottom: 0;
+    }
+
+    .col-textTwo p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .text-box p{
+        display: none;
+    }
+}
+
+@media(max-width: 315px) {
+    .fotogroup-col{/*СЕТКА ФОТО*/
+    /*flex-basis: 32%;*/
+        overflow: hidden;/*чтобы фото ны выходило за рамки блока*/
+        height: 100px;
+        width: 805px;
+        position: relative;
+    }
+
+    .effect-fotogroup p{
+        width: 100%;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: 0.5s;
+        bottom: 0;
+    }
+
+    .zagolovokTwo p{
+        font-size: 28px;
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 10px;
+        display: inline-block;
+    }
+
+    .zagolovok p{
+        font-size: 28px;
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 10px;
+        display: inline-block;/*ДЛЯ ЧЕРТЫ*/
+    
+    }
+
+    .col-textTwo p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+     .text-box p{
+        display: none;
+    }
+
+
+}
+
+@media(max-width: 999px){   /*О НАС*/
+
+    .elementsrow{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media(max-width: 999px){  /*КОНТАКТЫ*/
+    .inforow{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px 0px 200px 0px;
+        padding-left: 10px;
+    }
+
+    .colInfoOne{
+        padding: 0px 0px 10px 0px;
+    }
+
+    .colInfoTwo{
+        padding: 0px 0px 10px 0px;
+    }
+
+    
+
+}
+
+@media(max-width: 477px) {   /*КОНТАКТЫ*/
+    .inforow{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px 0px 100px 0px;
+        padding-left: 10px;
+    }
+
+    
+}
+
+@media(max-width: 999px) {  /*КАРЬЕРА*/
+    .mainArow{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .mainBrow{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0px 0px 50px 0px;
+    }
+
+    .mainA{     
+        max-width: 50%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .tpone{
+        display: none;
+    }
+    
+}
+
+@media(max-width: 477px) {
+    .mainA{     
+        max-width: 80%;
+        margin: auto;
+        align-items: center;
+    }
+
+
+    .tpone{
+        display: none;
+    }
+}
+
+@media(max-width: 999px){
+
+    .text-cooperation{  
+        max-width: 100%;
+        text-align: center;
+
+    }
+
+    .text-cooperation p{
+        margin: 0px 0px 50px 0px;
+
+        font-size: 40px;
+        display: inline-block;
+
+    }
+}
+
+@media(max-width: 477px){
+
+    .text-cooperationTwo{
+        max-width: 90%;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        flex-basis: 61%;
+
+    }
+}
+
+
+
+
+
